@@ -1,0 +1,180 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: "JetBrains Mono", monospace;
+    max-width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-links{
+    display: flex;
+}
+.nav-links > li{
+    list-style: none;
+    margin: 0 10px;
+}
+.nav-links > li > a{
+    color: white;
+}
+
+/* Intro */
+#intro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh;
+    padding: 0 10%;
+    margin-bottom: 20vh;
+}
+#main{
+    position: relative;
+}
+
+#main > #background{
+    position: absolute;
+    top: -130%;
+    left: -80%;
+    width: 200%;
+    height: 250%;
+    z-index: -1;
+    background-color: aliceblue;
+    opacity: 0.05;
+    rotate: 45deg;
+    border-radius: 20px;
+}
+
+#name{
+    font-size: 64px;
+    line-height: 0px;
+}
+
+#intro > #logos{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+}
+
+#skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 50px;
+}
+
+#skills::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    border-radius: 20px;
+    opacity: 0.05;
+    top: 0;
+}
+#skills-container{
+    display: flex;
+    justify-content: center;
+    width: 500px
+}
+
+#skills-container > hr{
+    margin: 0px 30px;
+    opacity: 0.5;
+}
+
+#skills-container > div > p{
+    font-size: 24px;
+    line-height: 0;
+}
+
+.skill-list{
+    list-style: none;
+}
+
+.section-header{
+    font-size: 48px;
+    font-weight: normal;
+    line-height: 10px;
+    position: relative;
+}
+
+.section-header::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 50px);
+    height: 1px;
+    background-color: white;
+    margin-top: 10px;
+    bottom: -35px;
+    left: -25px;
+}
+
+#projects{
+    margin-top: 150px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+#projects > h1{
+    width: fit-content;
+}
+
+.project{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    background-color: rgba(240, 248, 255, 0.05);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.project-desc{
+    flex: 1;
+}
+
+.project-images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    scale: 1.4;
+}
+
+.project-images > img {
+    aspect-ratio: 1/2;
+    height: 300px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.project-images > img:hover{
+    z-index: 2;
+    scale: 1.5;
+}
+#notebook-img{
+    aspect-ratio: 1.77;
+    height: 210px;
+}
+
+.project-chips{
+    margin-top: 20px;
+}
+
+.chip{
+    background-color: rgba(240, 248, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.no-line-height{
+    line-height: 0;
+}
