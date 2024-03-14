@@ -36,9 +36,10 @@ nav{
     display: flex;
     align-items: center;
     justify-content: left;
-    height: 80vh;
+    height: 50vh;
     padding: 0 10%;
-    margin-bottom: 20vh;
+    margin-top: 100px;
+    margin-bottom: 40vh;
 }
 
 #main{
@@ -66,16 +67,30 @@ nav{
     margin: 0px;
 }
 
-#logos > img{
+#title{
+    font-size: 23px;
+    margin-bottom: 25px;
+    margin-top: 2px;
+}
+#main > sub{
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+#profile-pic{
     width: 100%;
     max-width: 500px;
-    margin-top: 40px;
+    margin-top: 80px;
     border-radius: 10px;
-    opacity: 0.9;
+    opacity: 0.8;
     box-shadow: 40px -40px 0px 30px rgba(255, 255, 255, 0.05);
 }
 
+#skill-anchor{
+    position: absolute;
+    top: -200px;
 
+}
 
 #skills{
     display: flex;
@@ -116,6 +131,7 @@ nav{
 
 #skills-container > div > p{
     font-size: 24px;
+    margin-bottom: 0;
 }
 
 .skill-list{
@@ -227,6 +243,7 @@ nav{
     #intro{
         flex-direction: column;
         justify-content: center;
+        padding-top: 150px;
     }
     .project{
         flex-direction: column;
@@ -254,7 +271,7 @@ nav{
     }
 
     #intro{
-        padding: 0 20px;
+        padding: 50px 10px;
     }
     #name{
         font-size: 50px;
