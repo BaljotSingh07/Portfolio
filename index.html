@@ -12,12 +12,12 @@
 <body>
     <nav>
         <div class="logo">
-            <h4>Baljot.</h4>
+            <h4 >Baljot.</h4>
         </div>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#intro">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
@@ -26,21 +26,22 @@
         <div id="main">
             <sub>Hello, I'm</sub>
             <p id="name">Baljot Singh.</p>
-            <h4 id="title">An Software Developer</h4>
-            <p >My interest include Fullstack Development, Artificial Intelligence and Internet of Things</p>
+            <h4 id="title" class="err">An Software Developer</h4>
+            <br>
+            <sub >My interest include <span class="err">Fullstack Development</span>,  <span class="err">Artificial Intelligence</span> and <span class="err">Internet of Things</span></sub>
         </div>
         <div id="logos">
-
+            <img src="/images/software-developer-ill.jpg" alt="" srcset="">
         </div>
     </div>
 
     <div id="skills">
         <h1 class="section-header">My Toolkit.</h1>
-        <p>Creating websites, desktop apps, and mobile apps.</p>
+        <sub>Creating websites, desktop apps, and mobile apps.</sub>
         
         <div id="skills-container">
             <div >
-                <p>Languages</p>
+                <p class="err">Languages</p>
                 <ul class="skill-list">
                     <li>Java</li>
                     <li>C#</li>
@@ -53,7 +54,7 @@
             </div>
             <hr />
             <div>
-                <p>Technologies</p>
+                <p class="err ">Technologies</p>
                 <ul class="skill-list">
                     <li>.Net</li>
                     <li>Blazor</li>
@@ -71,7 +72,7 @@
         <h1 class="section-header">My Projects.</h1>
         <div class="project">
             <div class="project-desc">
-                <h2>Lotto Tracker</h2>
+                <h2 class="err">Lotto Tracker</h2>
                 <p>Created Progressive Web App (PWA) that eliminates the need for paper logs or manual  entry to keep track of lottery inventory and lottery sales.
                     Saves 100+ hours every year.</p>
                 <br>
@@ -91,7 +92,7 @@
         
         <div class="project">
             <div class="project-desc">
-                <h2>Teaching Assistant Scheduling App</h2>
+                <h2><span class="err">Teaching Assistant&nbsp;</span><span class="err">Scheduling App</span></h2>
                 <p>Worked in a group of six to create an web application that aims to improve the process of assigning teaching assistants to courses easier.
                     Responsible for the front-end and back-end.
                     Learned to apply AGILE methodology. </p>
@@ -109,7 +110,7 @@
 
         <div class="project">
             <div class="project-desc">
-                <h2>Notebook</h2>
+                <h2 class="err">Notebook</h2>
                 <p class="no-line-height">An server-less web application for taking notes.</p>
                 <p>Authentication with: Email confirmation, 2FA, Password reset and Google login.</p>
                 <br/>

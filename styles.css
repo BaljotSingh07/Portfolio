@@ -5,6 +5,7 @@ body{
     max-width: 1500px;
     margin-right: auto;
     margin-left: auto;
+    overflow-x: hidden;
 }
 
 nav{
@@ -27,12 +28,11 @@ nav{
 #intro{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: left;
     height: 80vh;
     padding: 0 10%;
     margin-bottom: 20vh;
 }
-
 
 #main{
     max-width: 600px;
@@ -59,18 +59,20 @@ nav{
     margin: 0px;
 }
 
-#intro > #logos{
-    background-color: red;
-    height: 500px;
-    width: 500px;
+#logos > img{
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+    border-radius: 10px;
 }
+
 
 #skills{
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    padding: 50px;
+    padding: 50px 10px;
 }
 
 #skills::before{
@@ -84,10 +86,17 @@ nav{
     opacity: 0.05;
     top: 0;
 }
+
 #skills-container{
+    margin-top: 5px;
     display: flex;
     justify-content: center;
-    width: 500px
+    max-width: 500px
+}
+
+#skills > sub {
+    margin-top: 5px;
+    opacity: 0.5;
 }
 
 #skills-container > hr{
@@ -97,7 +106,6 @@ nav{
 
 #skills-container > div > p{
     font-size: 24px;
-    line-height: 0;
 }
 
 .skill-list{
@@ -123,10 +131,12 @@ nav{
 }
 
 #projects{
-    margin-top: 150px;
-    padding: 50px;
+    margin: 150px 0px;
     display: flex;
     flex-direction: column;
+}
+#projects > sub, h1 {
+    padding: 0px 10px;
 }
 #projects > h1{
     width: fit-content;
@@ -151,6 +161,7 @@ nav{
     align-items: center;
     flex: 1;
     scale: 1.4;
+
 }
 
 .project-images > img {
@@ -184,13 +195,31 @@ nav{
     line-height: 0;
 }
 
+.err {
+    display: inline-block;
+    position: relative;
+}
+.err:before {
+    content: "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
+    font-size: 0.6em;
+    font-family: Times New Roman, Serif;
+    color: red;
+    width: 100%;
+    position: absolute;
+    bottom: -5px;
+    left: -1px;
+    overflow: hidden;
+}
+
 
 @media (max-width: 1200px) {
     #intro{
         flex-direction: column;
+        justify-content: center;
     }
     .project{
         flex-direction: column;
+        margin-bottom: 100px;
     }
 
     .project-images{
@@ -198,10 +227,7 @@ nav{
     }
 }
 
-@media (max-width: 600px ){
-    #projects{
-       padding: 10px;
-    }    
+@media (max-width: 600px ){ 
     .project{
         padding: 5px;
     }
@@ -215,4 +241,28 @@ nav{
         aspect-ratio: 1.77;
         height: 150px;
     }
+
+    #intro{
+        padding: 0 20px;
+    }
+    #name{
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 450px ){
+    #skills-container > hr{
+        margin: 0px 5px;
+    }
+    nav{
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .nav-links{
+        padding-left: 0px;
+    }
+    .logo{
+        padding-left: 10px;
+    }
+    
 }
