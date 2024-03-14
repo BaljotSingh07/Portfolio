@@ -1,3 +1,5 @@
+html { scroll-behavior: smooth; }
+
 body{
     background-color: black;
     color: white;
@@ -6,6 +8,11 @@ body{
     margin-right: auto;
     margin-left: auto;
     overflow-x: hidden;
+}
+
+.leader-line{
+    z-index: -1;
+    opacity: 0.3;
 }
 
 nav{
@@ -43,14 +50,14 @@ nav{
 #main::before{
     content: "";
     position: absolute;
-    top: -130%;
+    top: -80%;
     left: -80%;
     width: 200%;
     height: 250%;
     z-index: -1;
     background-color: aliceblue;
     opacity: 0.05;
-    rotate: 45deg;
+    rotate: 0deg;
     border-radius: 20px;
 }
 
@@ -62,9 +69,12 @@ nav{
 #logos > img{
     width: 100%;
     max-width: 500px;
-    margin-top: 20px;
+    margin-top: 40px;
     border-radius: 10px;
+    opacity: 0.9;
+    box-shadow: 40px -40px 0px 30px rgba(255, 255, 255, 0.05);
 }
+
 
 
 #skills{
@@ -149,6 +159,7 @@ nav{
     background-color: rgba(240, 248, 255, 0.05);
     padding: 40px;
     border-radius: 20px;
+    z-index: 2;
 }
 
 .project-desc{
