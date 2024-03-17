@@ -20,3 +20,15 @@ new LeaderLine(document.getElementsByClassName("project")[0], document.getElemen
 
 new LeaderLine(document.getElementsByClassName("project")[1], document.getElementsByClassName("project")[2], { color: "white", size: 1, path: "grid", startSocket: "right", endSocket: "right", endPlug: "behind" });
 
+//listen for menu click
+document.getElementById("menu-button").addEventListener("click", () => {
+     //get the nav links
+     let navLinks = document.getElementById("nav-links");
+     //if the nav links are displayed, hide them
+     if (navLinks.style.display === "flex") {
+          navLinks.style.display = "none";
+          return;
+     }
+     //if the nav links are hidden, display them
+     document.getElementById("nav-links").style.display = "flex";
+});

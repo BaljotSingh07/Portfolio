@@ -12,6 +12,17 @@ body{
     margin-left: auto;
 }
 
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+#menu-button{
+    display: none;
+    cursor: pointer;
+    padding: 0px 10px;
+}
+
 .leader-line{
     z-index: -1;
     opacity: 0.3;
@@ -21,15 +32,16 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0px 10px;
 }
-.nav-links{
+#nav-links{
     display: flex;
 }
-.nav-links > li{
+#nav-links > li{
     list-style: none;
     margin: 0 10px;
 }
-.nav-links > li > a{
+#nav-links > li > a{
     color: white;
 }
 
@@ -293,14 +305,21 @@ nav{
         margin: 0px 5px;
     }
     nav{
-        flex-direction: column;
+        justify-content: start;
         align-items: baseline;
-    }
-    .nav-links{
-        padding-left: 0px;
+        flex-direction: column;
+        background-color: rgb(0, 0, 0);
     }
     .logo{
         padding-left: 10px;
     }
+
+    #nav-links{
+        display: none;
+        padding-left: 10px;
+    }
     
+    #menu-button{
+        display: block;
+    }    
 }
