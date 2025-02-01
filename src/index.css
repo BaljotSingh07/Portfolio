@@ -1,0 +1,43 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.line {
+  height: 100%;
+  width: 2px;
+  left: 40%;
+  background-color: rgba(221, 221, 221, 0.068);
+  box-shadow: 0px 0px 20px rgba(104, 150, 147, 0.267);
+  position: fixed;
+  z-index: -5;
+  animation-name: lineGlowing;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+#line1{
+    animation-delay: 1s;
+    left: 42%;
+}
+
+#line2{
+    animation-delay: 2s;
+    left: 37%;
+}
+
+#line3{
+    animation-delay: 3s;
+    left: 45%;
+}
+
+@keyframes lineGlowing {
+  0% {
+    box-shadow: 0px 0px 10px rgba(55, 255, 242, 0.288);
+  }
+  50%{
+    box-shadow: 0px 1000px 10px rgba(55, 255, 242, 0.288);
+  }
+  100% {
+    box-shadow: 0px -1000px 10px rgba(55, 255, 242, 0.288);
+  }
+}
