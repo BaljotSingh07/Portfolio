@@ -1,0 +1,2 @@
+html{scroll-behavior:smooth}.line{animation-duration:6s;animation-iteration-count:infinite;animation-name:lineGlowing;background-color:hsla(0,0%,87%,.068);box-shadow:0 0 20px rgba(104,150,147,.267);height:100%;left:40%;position:fixed;width:2px;z-index:-5}#line1{animation-delay:1s;left:42%}#line2{animation-delay:2s;left:37%}#line3{animation-delay:3s;left:45%}@keyframes lineGlowing{0%{box-shadow:0 0 10px rgba(55,255,242,.288)}50%{box-shadow:0 1000px 10px rgba(55,255,242,.288)}to{box-shadow:0 -1000px 10px rgba(55,255,242,.288)}}
+/*# sourceMappingURL=main.d47358ff.css.map*/
