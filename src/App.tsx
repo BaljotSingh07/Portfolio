@@ -72,7 +72,7 @@ export default function App() {
 
       <Box height={100} />
 
-      <WorkExperience />
+      {/* <WorkExperience /> */}
 
       <Box height={100} />
 
