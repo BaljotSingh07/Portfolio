@@ -83,13 +83,13 @@ export default function App() {
       <ToolkitSection smallScreen={smallScreen} />
 
       <Box height={100} />
-      <Container>
+      {/* <Container>
         <object id="resume" data="BaljotSingh_Resume.pdf" type="application/pdf" width="100%" height="1400px">
           <p>
             Alternative text - include a link <a href="BaljotSingh_Resume.pdf">to the PDF!</a>
           </p>
         </object>
-      </Container>
+      </Container> */}
 
       <Box height={100} />
     </>
