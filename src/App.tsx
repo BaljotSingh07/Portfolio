@@ -9,6 +9,7 @@ import AboutSection from "./sections/aboutsection";
 import ToolkitSection from "./sections/toolkitsection";
 import WorkExperience from "./sections/workexperiencesection";
 import ProjectSection from "./sections/projectsection";
+import UnderConstruction from "../src/images/undraw_under-construction_c2y1.svg"
 
 import meImage from "./images/me.jpg";
 import awsCertImage from "./images/AWSCertifiedDeveloper.png";
@@ -68,28 +69,11 @@ export default function App() {
 
       <Box height={100} />
 
-      <AboutSection />
-
-      <Box height={100} />
-
-      {/* <WorkExperience /> */}
-
-      <Box height={100} />
-
-      <ProjectSection />
-
-      <Box height={100} />
-
-      <ToolkitSection smallScreen={smallScreen} />
-
-      <Box height={100} />
-      {/* <Container>
-        <object id="resume" data="BaljotSingh_Resume.pdf" type="application/pdf" width="100%" height="1400px">
-          <p>
-            Alternative text - include a link <a href="BaljotSingh_Resume.pdf">to the PDF!</a>
-          </p>
-        </object>
-      </Container> */}
+      <Box display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"center"}>
+        <Typography variant="h3">Major changes in progress...</Typography>
+        <Typography>Doing major changes. Please check back later. In the meantime visit my socal links.</Typography>
+        <img src={UnderConstruction}/>
+      </Box>
 
       <Box height={100} />
     </>
